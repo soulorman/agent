@@ -1,0 +1,9 @@
+[2020-06-04 13:19:03,214] [INFO] agent started: [20466]
+[2020-06-04 13:19:03,215] [INFO] plugin[ send ] running ...
+[2020-06-04 13:19:03,216] [INFO] plugin[ host ] running ...
+[2020-06-04 13:19:03,216] [DEBUG] plugin[ host ] make event: {'name': 'test1', 'os': 'ubuntu 16.04', 'project': 'ESD'}
+[2020-06-04 13:19:03,216] [DEBUG] send get event: {'type': 'host', 'url': 'client/192.168.31.100/', 'msg': {'name': 'test1', 'os': 'ubuntu 16.04', 'project': 'ESD'}}
+[2020-06-04 13:19:13,226] [DEBUG] plugin[ host ] make event: {'name': 'test1', 'os': 'ubuntu 16.04', 'project': 'ESD'}
+[2020-06-04 13:19:15,223] [DEBUG] send get event: {'type': 'host', 'url': 'client/192.168.31.100/', 'msg': {'name': 'test1', 'os': 'ubuntu 16.04', 'project': 'ESD'}}
+[2020-06-04 13:19:23,236] [DEBUG] plugin[ host ] make event: {'name': 'test1', 'os': 'ubuntu 16.04', 'project': 'ESD'}
+[2020-06-04 13:19:23,237] [DEBUG] send get event: {'type': 'host', 'url': 'client/192.168.31.100/', 'msg': {'name': 'test1', 'os': 'ubuntu 16.04', 'project': 'ESD'}}
