@@ -1,11 +1,6 @@
 
-# 收集线程
-import logging
-import time
-import requests
-
-from queue import Empty
 from .base import BaseThread
+from utils import main_sysutils
 
 
 class Host(BaseThread):
@@ -18,12 +13,20 @@ class Host(BaseThread):
     def make_event(self):
         return {
             'type' : self._type,
-            'url' : 'client/{0}/'.format('192.168.31.100'),
+            'url' : 'client/{0}/'.format(main_sysutils.get_addr()),
             'msg' : {
-                'name' : 'test1',
-                'os' : 'ubuntu 16.04',
-                'project' : self.items
-            }
+                'name' : main_sysutils.get_hostname(),
+                'os' : main_sysutils.get_os(),
+                'kernel' : main_sysutils.get_kernel(),
+                'arch' : main_sysutils.get_arch(),
+                'cpu_number' : main_sysutils.get_cpu_number(),
+                'cpu_core' : main_sysutils.get_cpu_core(),
+                'cpu_vcore' : main_sysutils.get_cpu_vcore(),
+                'get_mem_info' : main_sysutils.get_mem_info(),
+                'disk_info' : main_sysutils.get_disk_info(),
+                'get_gpu_info' : main_sysutils.get_gpu_info(),
 
+                'project' : self.items,
+                }
         }
 
